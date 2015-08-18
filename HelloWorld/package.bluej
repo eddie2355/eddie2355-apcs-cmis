@@ -1,3 +1,20 @@
 #BlueJ package file
-#Fri Aug 14 13:48:08 ICT 2015
+objectbench.height=76
+objectbench.width=686
+package.editor.height=400
+package.editor.width=560
+package.editor.x=848
+package.editor.y=309
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.height=50
+target1.name=HelloWorld
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=100
+target1.x=70
+target1.y=10
