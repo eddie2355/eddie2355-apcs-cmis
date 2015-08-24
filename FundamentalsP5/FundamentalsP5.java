@@ -4,8 +4,8 @@ public class FundamentalsP5
     
     public static void main ( String argv[] )
     {
-       
-        for (1 == 1; {
+        for (int x = 1; x == 1; x++); 
+        {
         String[] favMovies;
         favMovies = new String[3];
         
@@ -16,9 +16,11 @@ public class FundamentalsP5
         System.out.println( favMovies[0] );
         System.out.println( favMovies[1] );
         System.out.println( favMovies[2] );
-    }
     
-    while (2 ==2); {
+    }
+       int y = 2;
+       while (y < 2); 
+    {
         String[] favSongs;
         favSongs = new String[3];
         
