@@ -27,4 +27,6 @@ public class FundamentalsP1
         System.out.println( music );
      
     }
+    // this block asks for your favorite food, color, music group, and movie then gives you
+    // a list of those things.
 }

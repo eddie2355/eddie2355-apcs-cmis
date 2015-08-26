@@ -22,5 +22,7 @@ public class FundamentalsP2
         if (a == b) { System.out.println( "The value of 'a' is " + a + " and it is equal to 'b' whose value is " + b );
         }
     }
+    //this block asks for two numbers then outputs the whether or not the first number is
+    //greater than, less than, or equal to the second number using if loops.
 }
 

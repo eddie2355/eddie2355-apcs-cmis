@@ -18,4 +18,6 @@ public class FundamentalsP3
         
      
     }
+    //this block asks for a number and then checks whether it is an odd or even number using a if else loop
+    // based on whether it has a remainder after being divided by 2.
 }
