@@ -7,7 +7,7 @@ public class FundamentalsP9
     {
         String username = "Awesome";
         int password = 1997 ;
-        
+        System.out.println("username is Awesome and password is 1997");
         System.out.println( "Username: " );
         Scanner input1 = new Scanner( System.in );
         String user = input1.nextLine();
@@ -17,7 +17,10 @@ public class FundamentalsP9
         Scanner input2 = new Scanner( System.in );
         int pass = input2.nextInt();
         
-        if( user == username)
+        //the code above defines what my set login credentials and asks for the input of the user
+        //to match the set log in credentials.
+        
+        if( user.equals( username) && pass == password)
         {
             System.out.println("Login Successful");
         }
@@ -25,6 +28,6 @@ public class FundamentalsP9
         {
             System.out.println("Login Unsuccessful");
         }
-     
+     // th
     }
 }
