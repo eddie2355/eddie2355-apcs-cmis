@@ -15,4 +15,8 @@ public class FundamentalsP4
      System.out.println( i + "\t" + (i*i) + "\t" + randomInt); }
    
     }
+    // This block of code uses a for loop and the variable i to make a list of 1 - 10 
+    //and then show the variable i value, the square of i, and a random integer between
+    //variable i and its square. then prints it all out on spereate lines for each i value
+    //up to 10.
 }

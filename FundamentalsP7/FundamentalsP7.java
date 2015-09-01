@@ -2,11 +2,11 @@ public class FundamentalsP7
 {
    public static void main( String [] args)
    {
-int[] randArray = new int[10];
-for(int index = 0;index < randArray.length; index++)
-{
-   randArray[ index ] = (int) (Math.random() * (201) - 100 ) ;
-}  
+        int[] randArray = new int[10];
+        for(int index = 0;index < randArray.length; index++)
+        {
+            randArray[ index ] = (int) (Math.random() * (201) - 100 ) ;
+        }  
 //this block is using a for loop to assign 10 random values 
 //between 100 and -100 inclusively to my randArray
 int index = 0;

@@ -18,6 +18,8 @@ public class FundamentalsP5
         System.out.println( favMovies[2] );
     
     }
+    //this for loop creates an array and then prints out the values for the array favMovies.
+    //it will only run once.
        int y = 2;
        while (y < 2); 
     {
@@ -31,7 +33,8 @@ public class FundamentalsP5
        
       
     }
-        
+        //this while loop creates an array and then prints out the array values of favSongs
+        //on the same line. 
         }
     
     }
