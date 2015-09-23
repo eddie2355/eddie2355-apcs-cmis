@@ -18,7 +18,7 @@ public class weatherChaos
         System.out.println("day" + "\t" + "temp" + "\t" + "swing " + "\t" + "Description");
         
         String descript = "" ;
-        for(;;)
+        for(int i = 0;;)
         {
             if (randomNums[0] < 0)
             {
@@ -70,7 +70,7 @@ public class weatherChaos
                 descript = "AAAAAAUUUUUUGGHHHHHH!";
             }
             int swing = randomNums[iNew] - randomNums[newI];
-            System.out.println(iNew + "\t" + randomNums[iNew] + "\t" + swing + descript );
+            System.out.println(iNew + "\t" + randomNums[iNew] + "\t" + swing +"\t" + descript );
             newI++;
         }
         
