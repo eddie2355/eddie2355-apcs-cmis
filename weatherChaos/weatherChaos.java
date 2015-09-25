@@ -114,7 +114,7 @@ public class weatherChaos
                 allSwings[i] = randomNums[i] - randomNums[i - 1];
             if(allSwings[i] < 0)
                 {
-                    allSwings[i] = allSwings[i] * -1;
+                    allSwings[i] = Math.abs(allSwings[i]);
                 }
                 
         }
@@ -124,9 +124,9 @@ public class weatherChaos
         for (int i = 0; i < allSwings.length; i++)
         {
                
-               if(allSwings[i] > maximum)
+               if(Math.abs(allSwings[i]) > maxSwing)
                {
-                   maxSwing = allSwings[i];
+                   maxSwing = Math.abs(allSwings[i]);
                    dayOf = i+1;
                 } 
         }
