@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Student()
-comment1.params=hour\ minute\ second
-comment1.target=Student(int,\ int,\ int)
+comment1.params=grade\ gpa\ firstName\ lastName\ dBallZReference
+comment1.target=Student(int,\ double,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=
 comment2.target=java.lang.String\ toString()
 numComments=3

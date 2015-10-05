@@ -2,10 +2,10 @@ public class StudentDriver
 {
     public static void main ( String[] args )
     {
-       Student kitchenClock = new Student();
-       Student bedroomClock = new Student(17, 1, 22);
+       Student senior001 = new Student();
+       Student  junior001 = new Student(11, 1.9,"Rachel", "Lame" , " ");
        
-       System.out.println( kitchenClock );
-       System.out.println( bedroomClock );
+       System.out.println( senior001 );
+       System.out.println( junior001 );
     }
 }
