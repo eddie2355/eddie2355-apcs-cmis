@@ -1,24 +1,22 @@
 public class Card
 {
     private String rank;
-    private byte suit;
-    public Card()
+    private String suit;
+    /*public Card()
         {
             rank = "";
-            suit = 0;
+            suit = "";
         }
-    
-    public Card(String rank, byte suit)
+    */
+    public Card(String rank, String suit)
         {
             this.rank = new String(rank);
-            this.suit = suit;
+            this.suit = new String( suit );
         }
     
     public String toString()
         {
-            String output = String.format("");
-            return output;
-        }
-        
-    
+           String output = String.format(rank+suit + "\t");
+           return output;
+        } 
 }

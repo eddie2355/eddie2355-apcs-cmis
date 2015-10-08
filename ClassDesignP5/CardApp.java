@@ -2,43 +2,24 @@ public class CardApp
 {
     public static void main ( String[] args )
     {
-       int[] handRank = new int[3];
-       int[] handSuit = new String[3];
-       
-       for(i = 0;i < handRank;i++)
+       String[] ranks = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+       String [] suits = {"♠", "♣", "♦", "♥"};
+       String rank = "";
+       String suit = "";
+       System.out.println("Your Hand");
+       for(int i = 0;i<3;i++)
        {
-           handRank[i] = (int) Math.random() * 12;
-           handSuit[i] = (int) Math.random() * 5;
-           if(handRank[i] < 11 && handSuit == 1)
-           {
-               rank = handRank[i];
-               suit = ♠;
-               Card hand2 = new Card(rank, suit);
-            }
-            if(handRank[i] < 11 && handSuit == 2)
-           {
-               rank = handRank[i];
-               suit = ♣;
-               Card hand2 = new Card(rank, suit);
-            }
-            if(handRank[i] < 11 && handSuit == 3)
-           {
-               rank = handRank[i];
-               suit = ♦;
-               Card hand2 = new Card(rank, suit);
-            }
-            if(handRank[i] < 11 && handSuit == 4)
-           {
-               rank = handRank[i];
-               suit = ♥;
-               Card hand2 = new Card(rank, suit);
-            }
+           int randomNum1 = (int) (Math.random() * 13);
+           int randomNum2 = (int) (Math.random() * 4);
+           rank = ranks[randomNum1];
+           suit = suits[randomNum2];
            
+           Card hand2 = new Card(rank, suit);
            System.out.println( hand2 );
        }
        
-       Card hand1 = new Card();
-       System.out.println( hand1 );
+       //Card hand1 = new Card();
+       //System.out.println( hand1 );
     }
 }
 

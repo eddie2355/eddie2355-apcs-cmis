@@ -1,8 +1,7 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Card()
-comment1.params=rank\ suit
-comment1.target=Card(java.lang.String,\ byte)
-comment2.params=
-comment2.target=java.lang.String\ toString()
-numComments=3
+comment0.params=rank\ suit
+comment0.target=Card(java.lang.String,\ java.lang.String)
+comment0.text=public\ Card()\n\ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ rank\ \=\ "";\n\ \ \ \ \ \ \ \ \ \ \ \ suit\ \=\ "";\n\ \ \ \ \ \ \ \ }\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+numComments=2
