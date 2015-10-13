@@ -1,4 +1,4 @@
-public class BlackJack
+public class BlackJack 
 {
     private String card;
         
