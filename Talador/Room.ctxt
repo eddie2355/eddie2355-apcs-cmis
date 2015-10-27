@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=goBack\ direction
+comment0.target=Room(java.lang.String,\ java.lang.String)
+comment1.params=hall1\ goBack\ direction
+comment1.target=Room(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=hall1\ hall2\ direction\ goBack
+comment2.target=Room(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=3
