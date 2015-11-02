@@ -12,12 +12,22 @@ public class Song
             yearReleased = 1990;
         }
     
-    public Song(int downloads, String artist, boolean isItPlaying)
+    public int getYearReleased()
+        {
+            return yearReleased;
+        }
+    
+    public void setYearReleased( int year)
+        {
+            this.yearReleased = year;
+        }
+        
+    public Song(int downloads, String artist, boolean isItPlaying, int yearReleased)
         {
             this.downloads = downloads;
             this.artist = new String( artist );
             this.isItPlaying = isItPlaying;
-           
+            this.yearReleased = yearReleased;
         }
     
     public String toString()
@@ -25,9 +35,9 @@ public class Song
             String output = new String();
             output = ("This song has " + downloads + " downloads." + "\n" +
                      "The artist is " + artist + "." + "\n" +
-                     "Is the song playing? " + isItPlaying );
+                     "Is the song playing? " + isItPlaying + "\n" +
+                     "Year Released: " + yearReleased);
             return output;
         }
         
-    
 }
