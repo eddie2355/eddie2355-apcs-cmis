@@ -5,7 +5,6 @@ public class Student
     private String firstName;
     private String lastName;
     private double grades[] = new double[5];
-    
     public Student()
         {
             grade = 12;
@@ -15,28 +14,31 @@ public class Student
             double grades[] = {0.0, 0.0, 0.0, 0.0, 0.0};
         }
     
-    public Student(int grade, double gpa, String firstName, String lastName, double[] grades)
+    public Student(int grade, String firstName, String lastName, double[] grades)
         {
             this.grade = grade;
-            this.gpa = gpa;
             this.firstName = new String( firstName);
             this.lastName = new String( lastName );
-            this.grades = new double[5];
+            this.grades = grades;
         }
     
-    public void setGPA(double english, double math, double science, double fineArt, double socialScience)
+    public void setGPA(double english, double math, double science, double fineArt, double socialScience )
         {
-            this.grades = new double[] {english, math, science, fineArt, socialScience};
+            this.grades[0] = english;
+            this.grades[1] = math;
+            this.grades[2] = science;
+            this.grades[3] = fineArt;
+            this.grades[4] = socialScience;
         }
     
-    public double calcGPA(double[] grades)
+    public double calcGPA()
         {
             double sumGPA = 0;
             for (int i = 0; i<5;i++)
                 {
                     sumGPA += grades[i];
                 }
-            double GPA = sumGPA / 5;
+            double GPA = sumGPA / grades.length;
             return GPA;
         }
         
