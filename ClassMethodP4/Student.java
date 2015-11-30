@@ -1,21 +1,19 @@
 public class Student
 {
-    private int grade;
+    private String grade;
     private String firstName;
     private String lastName;
     private double grades[];
     
     public Student()
         {
-            grade = 12;
             firstName = "Eddie";
             lastName = "Awesome";
             grades = new double[] {0.0, 0.0, 0.0, 0.0, 0.0};
         }
     
-    public Student(int grade, String firstName, String lastName, double[] grades )
+    public Student( String firstName, String lastName, double[] grades )
         {
-            this.grade = grade;
             this.firstName = new String( firstName);
             this.lastName = new String( lastName );
             this.grades = grades;
@@ -41,13 +39,37 @@ public class Student
             
             return GPA;
         }
+    
+    /*public String getGrade()
+        {
+            if( calcGPA <= 4)
+                {
+                    grade = "A";
+                }
+            else if( grade <= 4 && grade >=3)
+                {
+                    grade = "B";
+                }
+            else if( grade <= 3 && grade >=2)
+                {
+                    grade = "C";
+                }
+            else if( grade <= 2 && grade >=1)
+                {
+                    grade = "D";
+                }
+            else
+                {
+                    grade = "F";
+                }
+        }*/
         
     public String toString()
         {
             String output = String.format("Student Info: " + "\n" +
                                           "Name: " + firstName + " " + lastName + "\n" +
-                                          "Grade: " + grade + "\n" +
-                                          "GPA: %.2f", calcGPA());
+                                          "GPA: %.2f", calcGPA() + 
+                                          "Overall grade: " + grade);
             return output;
         }
         

@@ -10,7 +10,7 @@ public class StudentDriver
        Student senior001 = new Student();
        
        double[] grades = new double[] {english, math, science, fineArt, socialScience};
-       Student  junior001 = new Student(12,"Joe", "Senior", grades);
+       Student  junior001 = new Student("Joe", "Senior", grades);
        
        System.out.println( "\n" + junior001 );
        
