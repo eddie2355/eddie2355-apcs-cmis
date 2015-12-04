@@ -20,5 +20,6 @@ public class StudentDriver
        
        System.out.println( senior001 + "\n" );              
        
+       senior001.getGrade();
     }
 }

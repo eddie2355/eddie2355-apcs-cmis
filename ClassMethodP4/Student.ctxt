@@ -8,6 +8,7 @@ comment2.target=void\ setGPA(double,\ double,\ double,\ double,\ double)
 comment3.params=
 comment3.target=double\ calcGPA()
 comment4.params=
-comment4.target=java.lang.String\ toString()
-comment4.text=public\ String\ getGrade()\n\ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ if(\ calcGPA\ <\=\ 4)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade\ \=\ "A";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if(\ grade\ <\=\ 4\ &&\ grade\ >\=3)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade\ \=\ "B";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if(\ grade\ <\=\ 3\ &&\ grade\ >\=2)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade\ \=\ "C";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if(\ grade\ <\=\ 2\ &&\ grade\ >\=1)\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade\ \=\ "D";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \ \ else\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ grade\ \=\ "F";\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\n}
-numComments=5
+comment4.target=java.lang.String\ getGrade()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

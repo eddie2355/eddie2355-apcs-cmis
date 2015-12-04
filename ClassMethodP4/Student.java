@@ -40,21 +40,21 @@ public class Student
             return GPA;
         }
     
-    /*public String getGrade()
+    public String getGrade()
         {
-            if( calcGPA <= 4)
+            if( calcGPA() <= 4)
                 {
                     grade = "A";
                 }
-            else if( grade <= 4 && grade >=3)
+            else if( calcGPA() <= 4 && calcGPA() >=3)
                 {
                     grade = "B";
                 }
-            else if( grade <= 3 && grade >=2)
+            else if( calcGPA() <= 3 && calcGPA() >=2)
                 {
                     grade = "C";
                 }
-            else if( grade <= 2 && grade >=1)
+            else if( calcGPA() <= 2 && calcGPA() >=1)
                 {
                     grade = "D";
                 }
@@ -62,7 +62,8 @@ public class Student
                 {
                     grade = "F";
                 }
-        }*/
+            return grade;
+        }
         
     public String toString()
         {
