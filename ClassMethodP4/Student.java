@@ -42,11 +42,11 @@ public class Student
     
     public String getGrade()
         {
-            if( calcGPA() <= 4)
+            if( calcGPA() <= 4 && calcGPA() >=3)
                 {
                     grade = "A";
                 }
-            else if( calcGPA() <= 4 && calcGPA() >=3)
+            else if( calcGPA() < 4 && calcGPA() >=3)
                 {
                     grade = "B";
                 }
@@ -67,10 +67,10 @@ public class Student
         
     public String toString()
         {
-            String output = String.format("Student Info: " + "\n" +
-                                          "Name: " + firstName + " " + lastName + "\n" +
-                                          "GPA: %.2f", calcGPA() + 
-                                          "Overall grade: " + grade);
+            String output = String.format("Student Info: \n" +
+                                          "Name: %s %s \n"  +
+                                          "GPA: %.2f \n" + 
+                                          "Overall grade: %s", firstName, lastName, calcGPA(), getGrade());
             return output;
         }
         
