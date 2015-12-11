@@ -42,7 +42,7 @@ public class Student
     
     public String getGrade()
         {
-            if( calcGPA() <= 4 && calcGPA() >=3)
+            if( calcGPA() == 4 )
                 {
                     grade = "A";
                 }
@@ -50,11 +50,11 @@ public class Student
                 {
                     grade = "B";
                 }
-            else if( calcGPA() <= 3 && calcGPA() >=2)
+            else if( calcGPA() < 3 && calcGPA() >= 2)
                 {
                     grade = "C";
                 }
-            else if( calcGPA() <= 2 && calcGPA() >=1)
+            else if( calcGPA() < 2 && calcGPA() >=1)
                 {
                     grade = "D";
                 }
