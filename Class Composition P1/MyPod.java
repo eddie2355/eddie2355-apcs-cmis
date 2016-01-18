@@ -6,24 +6,29 @@ public class MyPod
    
    public MyPod()
    {
-       color = "red";
+       color = "Blue";
        memoryCapacity = "6 GB";
-       songLibrary = new String[] {"Ace of Spades" , "Fair Weather Fans" , "Under Pressure"};
+       songLibrary = new String[] {"Motorhead - Ace of Spades" , "Ronnie Radke - Fair Weather Fans" , "Queen - Under Pressure ft. David Bowie"};
    }//end zero - constructor MyPod
    
    public MyPod(String color, String memoryCapacity, String[] songLibrary)
    {
        this.color = color;
        this.memoryCapacity = memoryCapacity;
-       this.songLibrary = new String[3];
+       this.songLibrary = songLibrary;
    }//end multi-constructor MyPod
-   
+    
    public String toString()
    {
+       String songs = new String();
+       for(String string : songLibrary)
+       {
+          songs+= (string + "\n"); 
+       }
        String output = String.format("MyPod Stats \n" +
                                      "color : %s \n" +
-                                     "memory ; %s \n" +
-                                     "songs: " ,color, memoryCapacity);
-       return output;  
+                                     "memory : %s \n" +
+                                     "songs : " + songs ,color, memoryCapacity);
+       return output;
    }//end toString method
 }// end class MyPod
