@@ -29,7 +29,5 @@ public class Clock
         {
             String output = String.format("The time on this clock: %02d:%02d:%02d", hour, minute, second);
             return output;
-        }
-        
-    
+        }    
 }
