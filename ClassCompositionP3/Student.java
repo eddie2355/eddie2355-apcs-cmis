@@ -7,9 +7,9 @@ public class Student
     
     public Student()
         {
-            grade = 12;
-            firstName = "Eddie";
-            lastName = "Awesome";
+            grade = 11;
+            firstName = "Rachel";
+            lastName = "Lame";
             grades = new double[] {0.0, 0.0, 0.0, 0.0, 0.0};
         }
     
@@ -20,6 +20,11 @@ public class Student
             this.lastName = new String( lastName );
             this.grades = grades;
         }
+    
+    public String getName()
+    {
+        return firstName;
+    }
     
     public double calcGPA()
         {
