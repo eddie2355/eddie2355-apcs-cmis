@@ -17,7 +17,6 @@ public class Roster
     public String findStudentWithMaxGPA()
     {
         int bestAround = 0;
-        String theBestName = roster[bestAround].getName();
         for (int i = 0; i <roster.length; i++)
             {
                 if(roster[i].calcGPA() > roster[bestAround].calcGPA())
@@ -25,7 +24,8 @@ public class Roster
                     bestAround = i;
                 }
             }
-        
+            
+        String theBestName = roster[bestAround].getName();
         return theBestName;
     }
     

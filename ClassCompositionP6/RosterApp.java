@@ -4,6 +4,6 @@ public class RosterApp
     {
         Roster roster1 = new Roster();
         System.out.println( roster1 + "\n");
-        System.out.println("The person with the highest GPA is of course " + roster1.findStudentWithMaxGPA());
+        //System.out.println("The person with the highest GPA is of course " + roster1.findStudentWithMaxGPA());
     }
 }

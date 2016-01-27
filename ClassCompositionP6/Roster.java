@@ -1,33 +1,43 @@
 import java.util.ArrayList;
 public class Roster
 {
-    private Student[] roster = new Student[3];
+    private ArrayList<Student> roster = new ArrayList<Student>();
     
     public Roster()
     {
         double[] stud1 = new double[] {4.0,4.0,4.0,4.0,4.0};
-        roster[0] = new Student(12, "Eddie","Awesome", stud1);
+        roster.add(new Student(12, "Eddie","Awesome", stud1));
         
         double[] stud2 = new double[] {4.0,4.0,3.3,3.3,3.3};
-        roster[1] = new Student(11, "Ted", "Shmosby", stud2);
+        roster.add(new Student(11, "Ted", "Shmosby", stud2));
         
         double[] stud3 = new double[] {0.0,0.0,0.0,0.0,0.0};
-        roster[2] = new Student(11, "Rachel", "Lame", stud3);
+        roster.add(new Student(11, "Rachel", "Lame", stud3));
     }
     
-    public String findStudentWithMaxGPA()
+    /*public String findStudentWithMaxGPA()
     {
         int bestAround = 0;
-        String theBestName = roster[bestAround].getName();
-        for (int i = 0; i <roster.length; i++)
+        for (int i = 0; i <roster.size(); i++)
             {
                 if(roster[i].calcGPA() > roster[bestAround].calcGPA())
                 {
                     bestAround = i;
                 }
             }
-        
+            
+        String theBestName = roster[bestAround].getName();
         return theBestName;
+    }
+    
+    public void addStudent( Student newStudent)
+    {
+        //roster.add( newStudent );
+    }
+    
+    public void dropStudent( Student lastName )
+    {
+        //roster.remove( );
     }
     
     public String toString()
@@ -39,5 +49,5 @@ public class Roster
             }
         String output = String.format(students);
         return output;
-    }
+    }*/
 }

@@ -1,11 +1,14 @@
 #BlueJ package file
+dependency1.from=Roster
+dependency1.to=Student
+dependency1.type=UsesDependency
 objectbench.height=76
 objectbench.width=686
 package.editor.height=400
 package.editor.width=560
-package.editor.x=-45
-package.editor.y=153
-package.numDependencies=0
+package.editor.x=20
+package.editor.y=20
+package.numDependencies=1
 package.numTargets=3
 package.showExtends=true
 package.showUses=true
