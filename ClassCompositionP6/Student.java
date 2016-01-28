@@ -21,9 +21,9 @@ public class Student
             this.grades = grades;
         }
     
-    public String getName()
+    public String getLastName()
     {
-        return firstName;
+        return lastName;
     }
     
     public double calcGPA()
@@ -43,7 +43,7 @@ public class Student
             String output = String.format("Student Info: " + "\n" +
                                           "Name: " + firstName + " " + lastName + "\n" +
                                           "Grade: " + grade + "\n" +
-                                          "GPA: %.2f", calcGPA());
+                                          "GPA: %.2f \n", calcGPA());
             return output;
         }
         
