@@ -38,7 +38,7 @@ public class Roster2
         String students = new String();
         for(Student student : roster)
             {
-                students += (student + "\n");
+                students += (student + "period1 \n \n");
             }
         String output = String.format(students);
         return output;
