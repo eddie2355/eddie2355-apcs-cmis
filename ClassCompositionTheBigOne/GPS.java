@@ -38,40 +38,48 @@ public class GPS
     public boolean isLevelTrailSegment(int begin, int end)
     {
         boolean isLevel = true;
-        int startIndex = 0;
-        int endIndex = 0;
         
-        if(begin != end)
+        if(markers.get(begin) != markers.get(end))
         {
            isLevel = false; 
         }
         else
         {
-            for(int i = 0; i < markers.size(); i++)
-            {
-                if( markers.get(i) == begin)
-                {
-                    startIndex = i;
-                }
-            }
-            
-            for(int i = 0; i < markers.size(); i++)
-            {
-                if( markers.get(i) == end)
-                {
-                    endIndex = i;
-                }
-            }
-            
-            for(int i = startIndex; i < endIndex + 1; i ++)
-            {
-                if(markers.get(i) - markers.get(i + 1) >= 10)
-                {
-                    isLevel = false;
-                }
-            }
+             for(int i = begin; i < end; i++)
+             {
+                if(markers.get(begin) - markers.get(i) > 10 || markers.get(end) - markers.get(i) > 10)
+                    {
+                        isLevel = false;
+                    }
+             }
         }
         return isLevel;
+    }
+    
+    public boolean isDifficult(int begin, int end)
+    {
+        boolean isDifficult = true;
+        int netGain = 0;
+        if(isLevelTrailSegment(begin, end))
+        {
+            isDifficult = false;
+        }
+        else
+        {
+            for(int i = begin; i < end; i++)
+            {
+                int calc = markers.get(i) - markers.get(i + 1);
+                if(calc > 0)
+                {
+                    netGain += calc;
+                }
+            }
+            if(netGain < 100)
+            {
+                isDifficult = false;
+            }
+        }
+        return isDifficult;
     }
     
     public String toString()
