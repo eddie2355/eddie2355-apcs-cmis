@@ -58,25 +58,21 @@ public class GPS
     
     public boolean isDifficult(int begin, int end)
     {
-        boolean isDifficult = true;
+        boolean isDifficult = false;
         int netGain = 0;
-        if(isLevelTrailSegment(begin, end))
-        {
-            isDifficult = false;
-        }
-        else
+        if(isLevelTrailSegment(begin, end) == false)
         {
             for(int i = begin; i < end; i++)
             {
-                int calc = markers.get(i) - markers.get(i + 1);
+                int calc = markers.get(i + 1) - markers.get(i);
                 if(calc > 0)
                 {
                     netGain += calc;
+                    if(netGain >= 100)
+                    {
+                        isDifficult = true;
+                    }
                 }
-            }
-            if(netGain < 100)
-            {
-                isDifficult = false;
             }
         }
         return isDifficult;
@@ -84,11 +80,11 @@ public class GPS
     
     public String toString()
     {
-        String output = new String("Index Elevation \n");
+        String output = new String("Index : Elevation \n");
         int counter = 0;
         for ( int s : markers)
         {
-            output += counter + " " + s + "\n" ;
+            output += counter + " : " + s + "\n" ;
             counter ++;
         }
         return output;

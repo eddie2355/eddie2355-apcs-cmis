@@ -19,7 +19,7 @@ public class GPSApp
         markers1.add(160);//9
         markers1.add(160);//10
         markers1.add(100);//11
-        markers1.add(200);//12
+        markers1.add(205);//12
         
         markers2.add(110);//0
         markers2.add(115);//1
@@ -46,7 +46,6 @@ public class GPSApp
     
         for(int i = 0; i < allGPS.length;i++)
         {
-            System.out.println(allGPS[i]);
             if(allGPS[i].isLevelTrailSegment(0,12))
             {
                 System.out.println("This trail is level.");
