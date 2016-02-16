@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyRadar()
+comment1.params=age\ color\ enemiesAround
+comment1.target=MyRadar(int,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3
