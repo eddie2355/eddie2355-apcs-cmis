@@ -14,6 +14,16 @@ public class MyRadar extends MyDevice
         this.enemiesAround = enemiesAround;
     }
     
+    public int getEnemiesAround()
+    {
+        return enemiesAround;
+    }
+    
+    public void setGetEnemiesAround()
+    {
+        this.enemiesAround = enemiesAround;
+    }
+    
     public String toString()
     {
         String output = new String(super.toString() + "\nThere are " + enemiesAround + " enemies within 50 yards.");
