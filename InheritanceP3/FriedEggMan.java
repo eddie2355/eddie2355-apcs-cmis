@@ -1,8 +1,13 @@
 public class FriedEggMan extends SuperHero
 {
-   public String motto()
+   public FriedEggMan()
    {
-       String motto = new String("");
+      super(); 
+   }
+   
+    public String motto()
+   {
+       String motto = new String();
        return motto;
     }
 }

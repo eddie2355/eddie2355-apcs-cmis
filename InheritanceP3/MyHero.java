@@ -1,6 +1,11 @@
 public class MyHero extends SuperHero
 {
-   public String motto()
+    public MyHero()
+   {
+      super(); 
+   }
+    
+    public String motto()
    {
        String motto = new String("");
        return motto;

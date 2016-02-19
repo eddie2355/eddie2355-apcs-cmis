@@ -1,6 +1,11 @@
 public class AsteroidMan extends SuperHero
 {
-   public String motto()
+    public AsteroidMan()
+   {
+      super(); 
+   }
+    
+    public String motto()
    {
        String motto = new String("");
        return motto;
