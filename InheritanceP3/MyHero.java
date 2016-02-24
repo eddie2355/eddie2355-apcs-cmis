@@ -7,7 +7,7 @@ public class MyHero extends SuperHero
     
     public String motto()
    {
-       String motto = new String("");
+       String motto = new String("I'll save the day..........EVENTUALLY!");
        return motto;
     }
 }

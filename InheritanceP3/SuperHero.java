@@ -2,6 +2,7 @@ public abstract class SuperHero
    {
    private String suitColor;
    private boolean hasCape;
+   private String name;
 
    public SuperHero()
       {
@@ -19,6 +20,16 @@ public abstract class SuperHero
       return suitColor;	
       } // end method getSuitColor
    
+   public void setName(String name)
+   {
+       this.name = new String(name);
+    }
+   
+   public String getName()
+   {
+       return name;
+    }
+    
    public void setCape(boolean cape)
       {
       this.hasCape = cape;	
