@@ -28,16 +28,32 @@ public class SuperHeroApp
         
         for(SuperHero hero : heroes)
         {
-            System.out.println(hero.getName() + "  -/-  " + hero.getSuitColor() + "  -/-  " + hero.isCaped() + "  -/-  " + hero.motto() );
+            System.out.println(hero.getName() + "  -/-  " + hero.getSuitColor() + "  -/-  " + hero.isCaped() + "  -/-  " + hero.motto() + "\n" );
         }//printing heroes
         
-        for(int row = 0; row < capedHeroes.length;row++)
+        for(int i = 0; i<heroes.size();i++)
         {
-            for(int col = 0; col < capedHeroes[1].length; col++)
+            SuperHero removal = heroes.get(i);
+            for(int row = 0; row < capedHeroes.length;row++)
             {
-                
-            }
-        }//assigning cape heroes to 3x3 array
-    
-    }
+                if(heroes.get(i).isCaped() == true )
+                {
+                    for(int col = 0; col < capedHeroes[1].length; col++)
+                    {
+                        capedHeroes[row][col] = heroes.get(i).getName();
+                        removal = heroes.get(i);
+                        heroes.remove(removal);
+                    }
+                }
+            }//assigning cape heroes to 3x3 array
+        }
+        
+        System.out.println("printing heroes left after edit");
+       for(SuperHero hero : heroes)
+        {
+            System.out.println(hero.getName() + "  -/-  " + hero.getSuitColor() + "  -/-  " + hero.isCaped() + "  -/-  " + hero.motto() + "\n" );
+        }//printing heroes
+        
+        //System.out.println(" 
+  }
 }
