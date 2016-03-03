@@ -24,7 +24,7 @@ public class SuperHeroApp
 
         heroes.add(asteroidMan);
         heroes.add(friedEggMan);
-        heroes.add(theEventuallyAnomaly);
+        heroes.add(theEventuallyAnomaly);      
 
         for(SuperHero hero : heroes)
         {
@@ -37,34 +37,41 @@ public class SuperHeroApp
             {
                 for(int col = 0; col < capedHeroes[0].length;col++)
                 {
-                    if(heroes.get(i).isCaped())
+                    if(heroes.get(i).isCaped() && i < 1)
                     {
                         capedHeroes[row][col] = heroes.get(i);
                         SuperHero removal =  heroes.get(i);
                         heroes.remove(removal);
-                        if(i > 0)
-                        {
-                            i--;
-                        }
+                    }
+                    else if(heroes.get(i).isCaped() && i >= 1 )
+                    {
+                        capedHeroes[row][col + i] = heroes.get(i);
+                        SuperHero removal =  heroes.get(i);
+                        heroes.remove(removal);
+                        i--;
                     }
                 }
             }
         }
 
-        System.out.println("printing 2d array of caped heroes");
+        System.out.println("*printing 2d array of caped heroes* \n");
         for(int row = 0; row < capedHeroes.length;row++)
         {
             for(int col = 0; col < capedHeroes[1].length; col++)
             {
-                 if(capedHeroes[row][col].equals(null))
+                 if(capedHeroes[row][col] != null)
                  {
                     System.out.println(capedHeroes[row][col].getName() + "  -/-  " + capedHeroes[row][col].getSuitColor() + "  -/-  " + capedHeroes[row][col].isCaped() + "  -/-  " + capedHeroes[row][col].motto() + "   " );
+                 }
+                 else if(capedHeroes[row][col] == null)
+                 {
+                    System.out.print(capedHeroes[row][col] + "    ");
                  }
             }
             System.out.println("\n");
         }
 
-        System.out.println("printing heroes left after edit");
+        System.out.println("*printing heroes left after edit*\n");
         for(SuperHero hero : heroes)
         {
             System.out.println(hero.getName() + "  -/-  " + hero.getSuitColor() + "  -/-  " + hero.isCaped() + "  -/-  " + hero.motto() + "\n" );
