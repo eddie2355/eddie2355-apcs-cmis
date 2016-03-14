@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=units
+comment0.target=int\ calculateTuition(int)
+comment1.params=name\ major\ units
+comment1.target=Student(java.lang.String,\ java.lang.String,\ int)
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment3.params=major
+comment3.target=void\ setMajor(java.lang.String)
+comment4.params=units
+comment4.target=void\ setunitsTaken(int)
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment6.params=
+comment6.target=java.lang.String\ getMajor()
+comment7.params=
+comment7.target=int\ getunitsTaken()
+numComments=8
