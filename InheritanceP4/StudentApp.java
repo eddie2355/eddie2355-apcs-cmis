@@ -4,15 +4,23 @@ public class StudentApp
     {
         Student[][] studentBody = new Student[3][2];
         
-        UnderGrad ug1 = new UnderGrad("James", "Flatulation", 6);
-        UnderGrad ug2 = new UnderGrad("Jen", "Astro-psychology", 4);
+        studentBody[0][0] = new UnderGrad("James", "Flatulation", 6);
+        studentBody[0][1] = new UnderGrad("Jen", "Astro-psychology", 4);
         
-        Graduate grad1 = new Graduate("Eddie", "Origins of the Self", 99);
-        Graduate grad2 = new Graduate("Rachel", "Gastro-philosophy", 1);
+        studentBody[1][0] = new Graduate("Eddie", "Origins of the Self", 99);
+        studentBody[1][1] = new Graduate("Rachel", "Gastro-philosophy", 1);
         
-        PostGrad pg1 = new PostGrad("Steph", "Scientology", 3);
-        PostGrad pg2 = new PostGrad("Ed", "Poultry-hypnosis", 11);
+        studentBody[2][0] = new PostGrad("Steph", "Scientology", 3);
+        studentBody[2][1] = new PostGrad("Ed", "Poultry-hypnosis", 11);
         
-        //add loop to put things in 2d array and print out each student
+        for(int r = 0; r< studentBody.length;r++)
+        {
+            for(int c = 0; c <studentBody[0].length;c++)
+            {
+                System.out.println("Student: " + studentBody[r][c].getName() + "\n" +
+                                   "Major: " + studentBody[r][c].getMajor() + "\n" +
+                                   "Tuition: " + studentBody[r][c].calculateTuition(studentBody[r][c].getUnitsTaken()) + "\n");
+            }
+        }
     }
 }

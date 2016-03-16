@@ -38,7 +38,7 @@ public abstract class Student
         return this.major;
     }
     
-    public int getunitsTaken()
+    public int getUnitsTaken()
     {
         return this.unitsTaken;
     }
