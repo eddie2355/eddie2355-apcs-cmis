@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyPhone()
+comment1.params=age\ color\ callInc
+comment1.target=MyPhone(int,\ java.lang.String,\ boolean)
+comment2.params=
+comment2.target=boolean\ getCallInc()
+comment3.params=
+comment3.target=void\ setCallInc()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

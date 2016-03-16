@@ -26,7 +26,7 @@ public class MyRadar extends MyDevice
     
     public String toString()
     {
-        String output = new String(super.toString() + "\nThere are " + enemiesAround + " enemies within 50 yards.");
+        String output = new String(super.toString() + "\nRadar says there are " + enemiesAround + " enemies within 50 yards.");
         return output;
     }
 }
