@@ -1,6 +1,7 @@
 #Greenfoot properties
-#Tue Mar 29 11:44:36 ICT 2016
+#Wed Mar 30 13:06:00 ICT 2016
 class.Enemy_SuperClass.superclass=greenfoot.Actor
+class.MachineGunBullet.image=steel-ball.png
 class.Bullet_SuperClass.superclass=greenfoot.Actor
 mainWindow.width=850
 class.MyWorld.superclass=greenfoot.World
@@ -9,4 +10,5 @@ version=2.8.0
 world.lastInstantiated=MyWorld
 mainWindow.y=40
 mainWindow.x=40
+class.MachineGunBullet.superclass=Bullet_SuperClass
 mainWindow.height=600
