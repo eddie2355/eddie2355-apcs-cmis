@@ -1,17 +1,10 @@
 import greenfoot.*;  
 
-public class Bullet extends Actor
+public abstract class Bullet extends Actor
 {
-    private int  damage;
-    private int  fireRate;
-    private Enemy target;
+    private int damage;
+    private int fireRate;
     
     public abstract void Bullet();
-    /*
-     * 
-     */
-    public  void SpecialEffect()
-    {
-        
-    }
+    public abstract void SpecialEffect();
 }
