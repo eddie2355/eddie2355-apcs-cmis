@@ -5,9 +5,8 @@ comment1.target=void\ act()
 comment2.params=
 comment2.target=Enemy\ getNearestTarget()
 comment3.params=
-comment3.target=void\ shoot()
+comment3.target=void\ Bullet()
+comment3.text=public\ void\ shoot()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ MouseInfo\ mouse\ \=\ Greenfoot.getMouseInfo();\n\ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ Bullet\ b\ \=\ new\ MachineGunBullet();\n\ \ \ \ \ \ \ \ getWorld().addObject(b,\ getX(),\ getY());\ //Adds\ bullet\ at\ the\ Players\ X\ and\ Y.\n\ \ \ \ \ \ \ \ b.turnTowards(getNearestTarget().getX(),\ getNearestTarget().getY());\ //Turns\ the\ bullet\ towards\ the\ target.\n\ \ \ \ \ \ \ \ b.move(getImage().getWidth()\ /\ 2);\ //Moves\ the\ bullet\ to\ the\ edge\ of\ the\ player.\n\ \ \ \ \ \ \ \ //b.setRotation(getRotation()\ -\ 90);\ //Turns\ the\ rotation\ of\ the\ bullet\ to\ offset\ it.\n\ \ \ \ \ \ \ \ //b.move(21);\ //Moves\ the\ bullet\ over\ to\ the\ gun.\n\ \ \ \ \ \ \ \ \n}
 comment4.params=
-comment4.target=void\ Bullet()
-comment5.params=
-comment5.target=void\ SpecialEffect()
-numComments=6
+comment4.target=void\ SpecialEffect()
+numComments=5

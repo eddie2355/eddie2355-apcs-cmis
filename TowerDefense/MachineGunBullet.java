@@ -28,7 +28,31 @@ public class MachineGunBullet extends Bullet
         }
         
         */
+        
+
     }    
+    
+    
+    public boolean atWorldEnd()
+    {
+        if (getX() <= 15)
+          {
+              setRotation(getRotation() + 80);
+          }
+        if (getY() <= 15)
+          {
+              setRotation(getRotation() + 80);
+          }
+        if (getX() >= getWorld().getWidth() - 15)
+          {
+              setRotation(getRotation() + 80);
+          }
+        if (getY() >= getWorld().getHeight() - 15)
+          {
+              setRotation(getRotation() + 80);
+          }
+          
+    }
     
     public Enemy getNearestTarget()
     {
@@ -60,7 +84,7 @@ public class MachineGunBullet extends Bullet
         return this.target;
     }
     
-    public void shoot()
+    /*public void shoot()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
        
@@ -71,7 +95,7 @@ public class MachineGunBullet extends Bullet
         //b.setRotation(getRotation() - 90); //Turns the rotation of the bullet to offset it.
         //b.move(21); //Moves the bullet over to the gun.
         
-    }
+    }*/
     
     public void Bullet()
     {
