@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri May 27 09:17:45 ICT 2016
+#Mon May 30 11:39:49 ICT 2016
 target4.type=ClassTarget
 dependency3.from=MachineGunBullet
 target3.height=50
@@ -25,6 +25,7 @@ target6.type=ClassTarget
 dependency1.to=Enemy
 dependency2.to=Enemy
 target1.width=80
+class.Turret.superclass=Tower
 editor.fx.0.y=0
 editor.fx.0.x=0
 target2.typeParameters=
@@ -71,19 +72,21 @@ dependency1.type=UsesDependency
 readme.height=58
 target2.name=Enemy_SuperClass
 readme.name=@README
-package.numDependencies=3
 simulation.speed=50
+package.numDependencies=3
 target3.type=AbstractTarget
 target4.width=150
 dependency2.from=MachineGunBullet
+class.Tower.superclass=greenfoot.Actor
 dependency2.type=UsesDependency
 target5.typeParameters=
 world.lastInstantiated=MyWorld
-mainWindow.height=600
 target2.showInterface=false
+mainWindow.height=600
 editor.swing.0.height=700
 target3.name=Enemy
 target6.showInterface=false
-project.charset=UTF-8
+class.Turret.image=igloo.png
 target3.width=80
+project.charset=UTF-8
 target4.showInterface=false

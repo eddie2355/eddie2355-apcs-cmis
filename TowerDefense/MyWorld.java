@@ -25,12 +25,13 @@ public class MyWorld extends World
         //cell.setColor(java.awt.Color.gray);
         //cell.drawRect(0, 0, 49, 49);
         //setBackground(cell);
+        
     }
     
     private void addPlayer() 
     {
         Bullet bullet =  new MachineGunBullet();
-        addActor(bullet ,100,100);
+        addActor(bullet ,50,50);
     }
     
      private void addActor(Actor block, int x, int y) {

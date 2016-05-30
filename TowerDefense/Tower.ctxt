@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Tower
 comment1.params=
-comment1.target=void\ Tower()
+comment1.target=void\ act()
 comment2.params=
-comment2.target=Enemy\ getNearestTarget()
+comment2.target=Enemy\ getTarget()
 numComments=3
