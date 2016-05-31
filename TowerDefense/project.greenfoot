@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon May 30 11:39:49 ICT 2016
+#Tue May 31 13:30:48 ICT 2016
 target4.type=ClassTarget
 dependency3.from=MachineGunBullet
 target3.height=50
@@ -25,8 +25,8 @@ target6.type=ClassTarget
 dependency1.to=Enemy
 dependency2.to=Enemy
 target1.width=80
-class.Turret.superclass=Tower
 editor.fx.0.y=0
+class.Turret.superclass=Tower
 editor.fx.0.x=0
 target2.typeParameters=
 dependency3.to=Bullet
