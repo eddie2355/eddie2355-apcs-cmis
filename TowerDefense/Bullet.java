@@ -1,6 +1,6 @@
 import greenfoot.*;  
 
-public abstract class Bullet extends Actor
+public interface Bullet extends Actor
 {
     private int damage;
     private int fireRate;
