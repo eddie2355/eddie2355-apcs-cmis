@@ -4,14 +4,18 @@ public class Turret extends Tower
 {
     private int enemyX;
     private int enemyY;
-    private int speed;
     
     public void act() 
     {
         enemyX = super.getTarget().getX();     
         enemyY = super.getTarget().getY();
         
-        setLocation(enemyX, enemyY);
+        while(getTarget() != null)
+        {
+            Bullet b - new MachineGunBullet();
+            MyWorld().getWorld().addObject( b, 30,30); // test bullet spawn and movement
+            setLocation(enemyX, enemyY);
+        }
         
         
     }    
