@@ -18,8 +18,14 @@ public abstract class Tower extends Actor
         }
         else 
         {
+            int indexMin = 0;
             List <Enemy> enemies = getObjectsInRange(15, Enemy.class);
-            Enemy target = enemies.get(0);
+            for(int i = 0; i < enemies.size();i++)
+            {
+                
+              
+                Enemy target = enemies.get(0);
+            }
         }
         return this.target;
     }
