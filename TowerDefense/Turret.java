@@ -13,7 +13,7 @@ public class Turret extends Tower
         while(getTarget() != null)
         {
             Bullet b - new MachineGunBullet();
-            MyWorld().getWorld().addObject( b, 30,30); // test bullet spawn and movement
+            getWorld().addObject( b, 30,30); // test bullet spawn and movement
             setLocation(enemyX, enemyY);
         }
         
